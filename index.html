@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Minessweeper</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+
+<body>
+    <div class="control-panel">
+        <label>
+            Board size:
+            <input type="number" id="boardSize" min="5" max="20" value="10">
+        </label>
+        <label>
+            Number of mines:
+            <input type="number" id="mineCount" min="1" max="50" value="10">
+        </label>
+        <button id="startGame">Start Game</button>
+    </div>
+
+    <!-- חלון הדיאלוג, קופץ בסוף המשחק -->
+    <dialog id="dialog">
+        <p id="dialogMessage"></p>
+        <button id="dialogButton">OK</button>
+    </dialog>
+
+    <!-- שדה משחק -->
+    <div id="board" class="board"></div>
+
+    <audio id="gameOverSound" src="assets/audio/game-over.mp3.mp3"></audio>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
